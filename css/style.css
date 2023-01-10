@@ -11,16 +11,18 @@
 }
 
 .bg-dark-color {
-    background-color: #050505;
+    background-color: royalblue;
 }
 
 .primary-color {
-    color: #FFF;
+    color: #050505;
 }
 
 .secondary-color {
-    color: #050505;
+    color: royalblue;
 }
+
+
 
 
 
@@ -28,7 +30,7 @@
 
 #navbar {
     border-bottom: 2px solid #050505;
-    background-color: royalblue;
+    background-color: #FFF;
 }
 
 #navbar a:hover {
@@ -44,7 +46,7 @@
 }
 
 .navbar-brand img {
-    width: 50px;
+    width: 80px;
 }
 
 .navbar-brand span {
@@ -66,7 +68,7 @@
 /*SLIDER */
 
 #slider {
-    margin-top: 8em;
+    margin-top: 12em;
     margin-bottom: 1em;
 }
 
@@ -104,6 +106,11 @@
     background-color: #000;
 }
 
+.d-block {
+    width: 50%;
+    height: 50%;
+}
+
 @media (min-width:768px) {
     #slider .carousel-caption {
         bottom: 15em;
@@ -124,6 +131,76 @@
         bottom:7em ;
     }
     
+}
+
+/*DESTAQUES*/
+
+#featured-container {
+    margin-bottom: 4em;
+}
+
+.title {
+    font-size: 1.75em;
+    margin-bottom: 0.4em;
+    margin-top: 100px;
+    position: relative;
+}
+
+.title:before {
+    width: 75px;
+    border-top: 4px solid #7a7a7a;
+    content: '';
+    position: absolute;
+    bottom: 2em;
+}
+
+.img-fluid {
+    width: 90%;
+    height: 90%;
+}
+
+#featured-images {
+    margin-top: 2em;
+}
+
+#featured-images .col-md-4 {
+    position: relative;
+    cursor: pointer;
+}
+
+#featured-images .col-md-4:hover > .banner-content {
+    opacity: 0.8;
+}
+
+
+#featured-images .banner-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.6;
+    transition: 0.5s;
+}
+
+@media (min-width:768px) {
+    .title {
+        font-size: 2.4em;
+    }
+
+    .title:before {
+        bottom:1.5em
+    }
+
+    #featured-images .banner-content {
+        opacity: 0;
+    }
+
 }
 
 /* MINI BANNERS */
@@ -159,15 +236,18 @@
     padding: 4em 1em;
 }
 
-#info-numbers {
-    margin: 1em 0;
+#quem-somos {
+    font-style: italic;
+    border-bottom: 1px dotted #050505;
 }
+
 
 
 
 @media(min-width:768px) {
     #info-content {
         padding: 3.5em;
+        margin-top: 0;
     }
 }
 
@@ -197,8 +277,9 @@
 }
 
 #social-icons i:hover {
-    color:#7a7a7a
+    color:#FFF
 }
+
 
 /* FOOTER DETAILS */
 
@@ -215,31 +296,16 @@
 }
 
 #footer-details h4 {
-    color:#FFF;
+    color:#050505;
     margin-bottom: 1.5em;
 }
 
-#news-container input {
-    border-radius: 0;
-    border: none;
-}
 
-#links-container li {
-    margin-bottom: 0.5em;
-}
-
-#links-container a {
-    text-decoration: none;
-}
-
-#links-container a:hover {
-   color:#FFF
-}
 
 /* FOOTER BOTTOM */
 
 #footer-bottom {
-    border-top: 1px solid #7a7a7a;
+    border-top: 2px dotted #050505;
     padding-top: 2em;
 }
 
@@ -259,7 +325,7 @@
 
     #contact-container {
         padding: 0 2em;
-        border-left: 1px solid #7a7a7a;
-        border-right: 1px solid #7a7a7a;
+        border-left: 2px dotted #050505;
+        
     }
 }
